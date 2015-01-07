@@ -1,9 +1,13 @@
---- Survey Form Part 1 Outline ---
+--- Survey Form Part 2 Outline ---
 
 1) Have the server render views/index.ejs that has the form for the user to fill out.
 
 2) The user fills out form and submits.
 
-3) The user submitted form gets sent to the server via post to /result.
+3) The form information is EMITTED to the server with the event name "posting_form".
 
-4) The server recognizes post to /result, gathers informtion from POST, and sends that POST dat back as it renders view/results.ejs.
+4) The server listens for an event "posting_form" and when this event get triggered, organizes all the emitted information to form a single message and send this single message with the event called "updated_message".  It also EMITs an event called "random_number" with random number between 1-1000.
+
+5) The client listens for an event called "random_number" and when this event gets triggered, shows the number in the HTML.
+
+6) The client listens for an event called "updated_message" and when this event gets triggered, displays the message somewhere in the HTML.
