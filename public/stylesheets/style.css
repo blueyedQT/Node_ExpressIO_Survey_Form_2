@@ -1,0 +1,33 @@
+body {
+	margin: auto;
+	text-align: center;
+}
+.outline {
+	outline: 2px dashed gray;
+	margin: 25px;
+	padding: 20px;
+	display: inline-block;
+	width: 400px;
+}
+p {
+	width: 150px;
+	text-align: left;
+	display: inline-block;
+}
+.inputs {
+	width: 150px;
+	text-align: left;
+	display: inline-block;
+}
+.button {
+	width: 100px;
+	margin: 5px 0 5px 250px;
+	background-color: green;
+	color: white;
+	display: block;
+}
+h3 {
+	text-align: left;
+	text-decoration: underline;
+	margin-left: 20px;
+}

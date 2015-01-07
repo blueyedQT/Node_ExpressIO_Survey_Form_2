@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+    <form class="outline" action="/result" method="post">
+		<p>Your Name: </p>
+		<input class="inputs" type="text" name="name" />
+		<p>Dojo Location: </p>
+		<select class="inputs" name="location">
+			<option value="Mountain View">Mountian View</option>
+			<option value="Bellevue">Bellevue</option>
+		</select>
+		<p>Favorite Language: </p>
+		<select class="inputs" name="language">
+			<option value="Node">Node</option>
+			<option value="JavaScript">JavaScript</option>
+			<option value="Express">Express</option>
+		</select>
+		<p>Comment (optional): </p>
+		<textarea class="inputs" name="comment"></textarea>
+		<input class="button" type="submit" value="Submit">
+    </form>
+</body>
+</html>
