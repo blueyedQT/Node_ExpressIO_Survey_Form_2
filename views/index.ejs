@@ -16,9 +16,11 @@
 	    			language: $("[name='language']").val(),
 	    			comment: $("[name='comment']").val()
 	    		});
-	    		io.on('updated_message', function(data) {
-	    			console.log(data);
+	    		io.on('updated_message', function(data){
 					$('#message').append(data).fadeIn();
+				});
+				io.on('random_number', function(data){
+					$('#message').append(data);
 				});
 	    	});
     	});
